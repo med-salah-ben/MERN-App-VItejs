@@ -5,8 +5,8 @@
 <h3>This is Contacts App . You can use the Contacts app to find someone's contact info or organize contacts with labels like "friends" or "family." </h3>
 
 <h2>Live Demo</h2>
-<p>To see a live demo of the website Vite React App <a href="https://vite-contact-app.onrender.com">, visit <strong> Contact App Demo </strong></a>
-  <a href="https://med-salah-ben-amou.onrender.com/" target="_blank"> <br/> <strong>Mohamed Salah Ben Amou</strong></a></p>
+<p>To see a live demo of the website Vite React App <a href="https://vite-contact-app.onrender.com">, visit <strong> Contact App Demo </strong></a><br/> 
+  <a href="https://med-salah-ben-amou.onrender.com/" target="_blank"> <strong>Mohamed Salah Ben Amou</strong></a></p>
 
 <br/>
 
