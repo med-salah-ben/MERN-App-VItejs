@@ -1,6 +1,6 @@
 <h1 align="center">Contact App Website</h1>
 <div align="center">
-  <img alt="Demo" src="./client/src/public/assets/contactApp.jpg" />
+  <img alt="Demo" src="./client/public/assets/contactApp.jpg" />
 </div>
 <h3>This is Contacts App . You can use the Contacts app to find someone's contact info or organize contacts with labels like "friends" or "family." </h3>
 
