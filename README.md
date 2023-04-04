@@ -1,4 +1,5 @@
 <h1 align="center">Contact App Website</h1>
+<h2 align="center">Workshop MERN</h2>
 <div align="center">
   <img alt="Demo" src="./client/public/assets/contactApp.jpg" />
 </div>
