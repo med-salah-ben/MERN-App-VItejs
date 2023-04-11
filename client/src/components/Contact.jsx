@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Card, Image } from 'semantic-ui-react'
-import { useDispatch } from 'react-redux';
+import { useDispatch , useSelector } from 'react-redux';
 import { deleteContact ,getContact } from '../JS/Actions/contact';
 import { toggleTrue } from '../JS/Actions/edit';
 import { Link } from 'react-router-dom';
@@ -8,7 +8,8 @@ import { Link } from 'react-router-dom';
 
 const Contact = ({contact}) => {
   const dispatch = useDispatch();
-  
+  const isAuth = useSelector((state)=>state.authReducer.isAuth)
+
   const handleDelete = (id)=>{
     dispatch(deleteContact(id))
   }
@@ -36,7 +37,7 @@ const Contact = ({contact}) => {
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
-      <div className='ui two buttons'>
+    {!isAuth ? "" :  <div className='ui two buttons'>
       <Link to={`/edit/${contact._id}`}> 
         <Button basic color='green' onClick={()=>{handleContact(contact._id) ; handleEditTrue()}} >
         Edit 
@@ -45,7 +46,7 @@ const Contact = ({contact}) => {
         <Button basic color='red' onClick={()=>handleDelete(contact._id)}>
           Delete
         </Button>
-      </div>
+      </div>}
     </Card.Content>
   </Card>
   )
