@@ -1,5 +1,6 @@
 import { combineReducers } from "redux";
 import { contactReducer } from "./contactReducer";
 import { editReducer } from "./edit";
+import authReducer from "./authReducer";
 
-export const rootReducer = combineReducers({contactReducer , editReducer})
+export const rootReducer = combineReducers({contactReducer , editReducer , authReducer})

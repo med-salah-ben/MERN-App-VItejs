@@ -6,8 +6,11 @@ const connectDB = require('./config/connectDB')
 const app = express();
 // //add middleware routing body parse
 app.use(express.json())
+
 //create route 
 app.use("/api/contact", require("./routes/contact"))
+app.use("/api/auth", require("./routes/auth"))
+
 
 
 connectDB();
